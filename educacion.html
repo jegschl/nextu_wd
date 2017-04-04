@@ -57,9 +57,10 @@
         </tbody>
       </table>
 
+      <h2>Agregar Estudios</h2>
       <form name="AddStudies" autocomplete="on">
         <fieldset>
-          <legend>Agregar Estudios</legend>
+          <!-- NOTE:   <legend>Agregar Estudios</legend> -->
           <label for="Year">Año: </label>
           <select id="Year">
             <option>Seleccione Año</option>
@@ -86,6 +87,22 @@
             <option>1996</option>
             <option>1995</option>
           </select>
+          <br>
+
+          <label for="Institucion">Institución: </label>
+          <input type="text" id="Institucion" required>
+          <br>
+
+          <label for="Lugar">Lugar: </label>
+          <textarea name="TextoLugar" rows="4" cols="30" id="Lugar"></textarea>
+          <br>
+
+          <label for="Culmino">¿Culminó?: </label>
+          <input type="radio" id="Culmino" name="RadioCulmino">Si
+          <input type="radio" id="Culmino "name="RadioCulmino">No
+          <br>
+
+          <input type="submit">
         </fieldset>
     </article>
 
